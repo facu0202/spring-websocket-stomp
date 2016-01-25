@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Example Spring WebSocket</title>
+<script src="http://cdn.sockjs.org/sockjs-0.3.min.js"></script>
+	<script src="/js/stomp.js"></script>
+	<script src="/js/websocket.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<h1>Example Spring WebSocket</h1>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Data received</th>
+			</tr>
+		</thead>
+		<tbody id="message"></tbody>
+	</table>
+	<p class="new">
+		Message <input type="text" class="textMessage" />
+		<button onclick="sendRest();">Send Message by REST</button>
+		<BR></BR>
+	    Message <input type="text" class="textMessageSocket" />
+		<button id="enviarMensaje" onclick="sendSocket();">Send Message by socket</button>
+		<BR></BR>
+	</p>
+</body>
+</html>
