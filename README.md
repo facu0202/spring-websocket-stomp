@@ -1,4 +1,4 @@
-# spring-thymeleaf-example
+# spring-websocket-stomp-example
 
 ## Preface
 This project contains a simple example with Spring Boot and WebSocket.
