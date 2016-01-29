@@ -30,7 +30,7 @@ public class AppController {
 	  @RequestMapping(value="/message", method={RequestMethod.POST},  headers ="Accept=application/json")
 	    @ResponseBody
 	    @ResponseStatus(HttpStatus.CREATED)
-	    public String saveGuest(@RequestParam String mode, @RequestBody Message message){
+	    public String saveGuest( @RequestBody Message message){
 	        broker.notifyArrival(message.getMessage());
 	        return message.getMessage();
 	    }

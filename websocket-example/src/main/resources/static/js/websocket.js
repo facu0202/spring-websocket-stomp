@@ -32,7 +32,7 @@ function sendRest()
 {
 	 		var text = $('.new .textMessage').val();
 	        $.ajax({
-	            url: '/message?mode=1&channel='+getChanelName(),
+	            url: '/message/',
 	            type: 'POST',
 	            dataType: 'json',
 	            data: JSON.stringify( {"message":text }),
